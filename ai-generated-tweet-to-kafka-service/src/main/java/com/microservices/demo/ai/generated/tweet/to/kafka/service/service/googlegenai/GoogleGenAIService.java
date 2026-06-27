@@ -3,7 +3,7 @@ package com.microservices.demo.ai.generated.tweet.to.kafka.service.service.googl
 import com.google.genai.Client;
 import com.google.genai.types.GenerateContentConfig;
 import com.google.genai.types.GenerateContentResponse;
-import com.microservices.demo.ai.generated.tweet.to.kafka.service.config.AIGeneratedTweetToKafkaServiceConfigData;
+import com.microservices.demo.config.AIGeneratedTweetToKafkaServiceConfigData;
 import com.microservices.demo.ai.generated.tweet.to.kafka.service.exception.AIGeneratedTweetToKafkaServiceException;
 import com.microservices.demo.ai.generated.tweet.to.kafka.service.service.AIService;
 import lombok.extern.slf4j.Slf4j;

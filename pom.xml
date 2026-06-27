@@ -15,6 +15,7 @@
 	<description> Microservices demo project for Spring Boot </description>
 	<modules>
 		<module>ai-generated-tweet-to-kafka-service</module>
+		<module>app-config-data</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -26,6 +27,7 @@
 		<openai-java.version>4.41.0</openai-java.version>
 		<google-genai.version>1.59.0</google-genai.version>
 		<spring-ai.version>2.0.0</spring-ai.version>
+		<app-config-data.version>0.0.1-SNAPSHOT</app-config-data.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -56,6 +58,11 @@
 				<version>${spring-ai.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>app-config-data</artifactId>
+				<version>${app-config-data.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
